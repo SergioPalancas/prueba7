@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro</title>
+	<meta charset="UTF-8">
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<link href="CSS/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script type="text/javascript">
+		var state = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antarctica", "Antigua and Barbuda",
+			"Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados",
+			"Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana",
+			"Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde",
+			"Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic",
+			"Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark",
+			"Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea",
+			"Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
+			"Greece", "Greenland", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong",
+			"Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan",
+			"Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia",
+			"Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar",
+			"Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia",
+			"Moldova", "Mongolia", "Morocco", "Monaco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand",
+			"Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru",
+			"Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "San Marino", " Sao Tome",
+			"Saudi Arabia", "Senegal", "Serbia and Montenegro", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia",
+			"Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden",
+			"Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago",
+			"Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States",
+			"Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe");
+		</script>
+
+		<script type="text/javascript">
+			function logoutSesion(){
+    document.cookie = "sesion=; expires=Thu,01 Jan 1970 00:00:00 UTC; path=/;";
+}
+		</script>
+
+		<script src="jquery-3.2.1.js"></script>
+		<script src="jquery-ui.min.js"></script>
+
+	</head>
+	<body>
+		<div class="main">
+			<h1 class="texto">Formulario</h1>
+			<div class="mainC">
+				<div class="login-form login-form-left"> 
+					<div class="agile-row">
+						<h2>Inicia Sesion</h2> 
+						<div class="login-agileits-top"> 	
+							<form action="./registro.html" method="post" class='loggin'> 
+								<p>Usuario </p>
+								<input type="text" class="name nombre" name="nombre" />
+								<div class="miDiv">
+								</div>
+								<p>Contraseña</p>
+								<input type="password" class="password" name="password"/>
+								<div class="miDiv">
+								</div>  
+								<label class="anim">
+									<input type="checkbox" class="checkbox">
+									<span> Recordar Usuario</span> 
+								</label>   
+								<input type="submit" value="Iniciar Sesion"> 
+							</form> 	
+							
+						</div> 
+						<div class="login-agileits-bottom"> 
+							<h6><a href="#">Olvide mi contraseña?</a></h6>
+						</div> 
+					</div>  
+				</div> 
+				<!-- FORMU REGISTRO -->
+				<div class="login-form agileits-right"> 
+					<div class="agile-row">
+						<h3>Registro</h3> 
+						<div class="login-agileits-top"> 	
+							<form action="./indexF.html" method="post" class="registro"> 
+								<!-- Usuario-->
+								<p>Nombre Usuario </p>
+								<input type="text" class="name"  name="nombre" required="required"
+								title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20" placeholder="Nombre" />
+								<div class="miDiv">
+								</div>
+								<p>Correo</p>
+								<input type="email" class="email" name="correo" required="required" placeholder="example@ejemplo.com"/>
+								<div class="miDiv">
+								</div>
+								<p>Contraseña</p>
+								<input type="password" class="password" name="password" required="required" placeholder="Contraseña" title="Debe tener al menos ocho caracteres y contener al menos una letra minúscula, una mayúscula, un número y un símbolo"/>  
+								<div class="miDiv">
+								</div>
+								<p>Confirmar contraseña</p>
+								<input type="password" class="password1" name="password" required="required" placeholder="Confirmar Contraseña"/>  
+								<div class="miDiv">
+								</div>  
+
+								<!-- Sexo-->
+								<p>Sexo * </p>	
+								<select name="Sexo">
+									<option  disabled="disabled">Seleccione el Sexo</option>
+									<option value="Masculino">Masculino</option>
+									<option value="Femenino">Femenino</option>
+									<option value="Otros">Otros</option>
+								</select>
+
+								<!-- Fecha Nacimiento-->
+
+								<p>Fecha de Nacimiento * </p>
+								<input type="date" name="fecha"/>  
+
+								<p> Direccion * </p>
+								<input type="text" name="direccion" class="direccion" placeholder="Calle Ejemplo Nº 5 " />
+
+
+								<!--<p> Pais </p>
+								<input type="text" name="pais" class="pais">-->
+
+								<!-- pais -->
+								<span class="abouttabletext" >
+									<select name="select" class="pais">
+										<script type="text/javascript">
+											for(var hi=0; hi<state.length; hi++)
+												document.write("<option value="+state[hi]+">"+state[hi]+"</option>");
+										</script>
+									</select>
+								</span>
+
+								<div class="tarjetaCredito">
+									<p> Numero Tarjeta de Credito * </p>
+									<input type="number" name="numerotarjeta" class="tarjeta"/>
+								</div>
+
+
+								<!--  Notificaciones Checkbox-->
+								<label class="anim">
+									<input type="checkbox" class="checkbox">
+									<span> Notificación de novedades * </span> 
+								</label> 
+								<br>
+								<label class="anim">
+									<input type="checkbox" class="checkbox">
+									<span> Recepción de la revista digital *  </span> 
+								</label> 
+								<p> Los campos con un * son opcionales</p>
+
+								<!-- Enviar -->
+								<input type="submit" value="Registrar">
+							</form> 	
+						</div>  
+					</div>  
+				</div> 
+				<div class="clear"> </div>	 
+			</div>	
+		</div>	
+
+		<script src="hola.js"></script>
+	</body>
+	</html>

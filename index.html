@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">-->
+  <head>
+   <title>Prototipo</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <script type="text/javascript" src="jquery-3.2.1.js"></script>
+   <script type="text/javascript" src="jquery-ui.min.js"></script>
+
+
+  <!--Estilos del footer y resto-->
+  <link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+
+  <!-- Estilo de Menu -->
+  <link rel="stylesheet" type="text/css" href="./CSS/color.css">
+  <link rel="stylesheet" href="a.css">
+  <script src="b.js"></script>
+  <script src="c.js"></script>
+
+  <!-- Css para que se mueva el texto al hacer scroll-->
+  <link rel="stylesheet" href="CSS/style1.css">
+  <script  src="js/index.js"></script>
+
+  <!--Ficheros JS-->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!--Tipos de Letras-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Croissant+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet"> <!-- Texto para Producto-->
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> <!-- Texto para Producto 1 y 4 -->
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"><!--  Texto para Producto2-->
+  <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet"> <!-- Texto para Producto5 -->
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+  <!-- boopstrap enlaces-->
+  <link rel="stylesheet" type="text/css" href="./bootstrap-4.0.0-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./bootstrap-4.0.0-dist/js/bootstrap.js">
+
+
+  <!-- Carrusel boopstrap-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+  
+  
+
+<!-- Funcion para cambiar el texto del producto5. -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".info4").mouseover(function(event) {
+      $(".info4 p").css('font-weight','bolder');
+      $(".info4 p").css('color','white');
+    });
+
+     $(".info4").mouseout(function(event) {
+      $(".info4 p").css('font-weight','bolder');
+      $(".info4 p").css('color','black');
+    });
+
+  });
+</script>
+
+<!-- Para las abreviaturas de algunas palabras -->
+<link rel="stylesheet" type="text/css" href="link.css" />
+<script type="text/javascript" src="link.js">
+  tooltips[0]=["lit. dios de la muerte", background:"#DDECFF", width:"200px"}]
+  tooltips[1]=["Es una aplicación software de síntesis de voz con la capacidad de cantar,", background:"#DDECFF", width:"200px"}]
+</script>
+
+
+
+
+</head>
+<body>
+
+  <!--Contenedor General de la cabecera-->
+  <div class="container-fluid">
+
+    <!--Cabecera-->
+    <header class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <img src="logo3.png" alt="" class="logotipo"/>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="bloque1">
+
+            <div class="registro-acceso">
+              <a href="./indexF.html">Registro/Acceso</a>
+            </div>
+
+            <div class="idiomas"> 
+              <a href="#"><img src="./Paises/spain.jpg" width="50" height="20" alt="Español"/>Español</a>
+              <a href="indexIngles.html"><img src="./Paises/english.jpg" width="50" height="20" alt="Ingles"/>Ingles</a>
+            </div>
+
+            <!-- Menu de navegacion -->
+            <div class="buscador">
+              <div class="busqueda">
+                  <form>
+                  <label for="buscador">Buscar</label>
+                  <input type="text"/>
+                  </form>
+              </div>
+            </div>
+       
+        </div>
+        </div>
+  </header>
+  
+
+<!-- Menu -->
+<nav class="navbar navbar-inverse forma">
+    <ul class="nav navbar-nav forma3">
+      <li class="subrayado"><a href="#" class="subrayado">Inicio</a></li>
+      <li class="dropdown subrayado"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Figuras</a></li>
+      <li class="dropdown subrayado"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mangas</a> 
+        <ul class="dropdown-menu">
+          <li><a href="#">Shonen</a></li>
+          <li><a href="#">Shojo</a></li>
+        </ul>
+      </li>
+      <li class="dropdown subrayado"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Juegos</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">PS4</a></li>
+          <li><a href="#">Xbox</a></li>
+        </ul>
+      </li>
+      <li class="dropdown subrayado"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Merchandasing</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Llaveros</a></li>
+          <li><a href="#">Mochilas</a></li>
+        </ul>
+      </li>
+    </ul>
+</nav>
+
+<!-- Carrusel -->
+  
+  <article class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+      
+      <!-- Fotos del carrusel -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="./Imagenes/Carrusel/carr1.jpg" title="Digimon">
+        </div>
+
+        <div class="carousel-item">
+          <img src="./Imagenes/Carrusel/carr2.jpg" title="Doraemon">
+        </div>
+
+        <div class="carousel-item">
+          <img src="./Imagenes/Carrusel/carr3.jpg" title="Yu-Gi-Oh">
+        </div>
+
+        <div class="carousel-item">
+         <img src="./Imagenes/Carrusel/carr4.jpg" title="Pokemon">
+        </div>
+
+      </div>
+      
+      <!--Botones Derecha izquierda-->
+      <a class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+  </div>
+  </article> 
+
+
+<!--Productos-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="animation-element bounce-up cf">
+      <div class="subject development">
+        <h2 class="pro">Productos</h2>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+<div class="catalago">
+<div class="row">
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="./Imagenes/caballeros1.jpg" alt="caballeros">
+         <h4 class="card-text">Saint Seiya Soul of Gold</h4>
+           <p class="let">
+              Es la serie de anime mas reciente perteneciendo a la
+              franquicia de Saint Seiya, anunciada durante un evento
+              de la Tamashii Nations. La serie animada comenzó su
+              emision el día 11 de abril con una transmisión en línea 
+              disponible en más de 200 países. 
+           </p>
+          <span class="btn btn-primary">11.99€</span>
+          <i class="fa fa-shopping-basket fa-2x" title="¡Añadir a la cesta!" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" title="¡Favorito!" aria-hidden="true"></i>
+        <i class="fa fa-heart-o fa-2x" title="¡Me gusta!" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="./Imagenes/kingdom.jpg" alt="kingdom">
+        <h4 class="card-text">Poster Kingdom Hearths</h4>
+        <ul class="let">
+           <li  class="let1">Impresión de EXCELENTE calidad en papel satinado de 270g/m².</li>
+           <li  class="let1">Tamaño de los pósters: 42cm. de ancho x 60cm de alto.</li>
+           <li  class="let1">Enviado en envase protector (cilindro de cartón) que asegura su perfecta llegada.</li>
+          </ul>
+        <span class="btn btn-primary">5.99€</span>
+        <i class="fa fa-shopping-basket fa-2x" title="¡Añadir a la cesta!" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" title="¡Favorito!" aria-hidden="true"></i>
+        <i class="fa fa-heart-o fa-2x" title="¡Me gusta!" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="./Imagenes/muñeca-azul.jpg" alt="muñeca">
+        <h4 class="card-text">Figura Miku</h4>
+        <p class="let">
+           Es una artista virtual basada en el banco de voz digital <a href="https://translate.google.es/" rel="imgtip[1]">VOCALOID2, VOCALOID3 o VOCALOID4.</a> Su imagen llega a ser considerada y personificada como una de las más famosas idol virtuales japonesas y es una artista virtual basada en el banco  de Vocaloid.
+        </p>
+        <span class="btn btn-primary">19.99€</span>
+       <i class="fa fa-shopping-basket fa-2x" title="¡Añadir a la cesta!" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" title="¡Favorito!" aria-hidden="true"></i>
+        <i class="fa fa-heart-o fa-2x" title="¡Me gusta!" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="./Imagenes/one-piece.jpg" alt="one-piece">
+        <h4 class="card-text">Serie One-Piece</h4>
+        <p class="let">
+           Es un anime producido por Toei Animation y transmitido por Fuji Television. El primer episodio salió al aire en Japon el 20 de Octubre de 1999. El show continúa con más de 800 episodios, 13 películas y 12 especiales de televisión.
+        </p>
+        <span class="btn btn-primary">30€</span>
+        <i class="fa fa-shopping-basket fa-2x" title="¡Añadir a la cesta!" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" title="¡Favorito!" aria-hidden="true"></i>
+        <i class="fa fa-heart-o fa-2x" title="¡Me gusta!" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="./Imagenes/bleach.jpg" alt="bleach">
+        <h4 class="card-text">Póster Bleach</h4>
+        <p class="let">
+          Narra las aventuras de un adolescente llamado Ichigo Kurosaki, un estudiante de quince años que tiene la habilidad de interactuar con los espíritus.
+          Una noche, Ichigo se encuentra con una Shinigami <a href="https://translate.google.es/" rel="imgtip[0]">(死神),</a> llamada Rukia Kuchiki.
+        </p><br>
+        <span class="btn btn-primary">25€</span>
+       <i class="fa fa-shopping-basket fa-2x" title="¡Añadir a la cesta!" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" title="¡Favorito!" aria-hidden="true"></i>
+        <i class="fa fa-heart-o fa-2x" title="¡Me gusta!" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img-top" src="./Imagenes/fullmetal.jpg" alt="FMA">
+        <h4 class="card-text">Fullmetal Alchemist Serie</h4>
+        <p class="let">
+          Es una serie de manga escrita e ilustrada por Hiromu Arakawa. Su primera adaptación al anime fue dirigida por Seiji Mizushima y la segunda por Yasuhiro Irie.El mundo de Fullmetal Alchemist tiene un estilo <a href="https://es.wikipedia.org/wiki/Steampunk">steampunk</a> (Revolución Industrial europea).
+        </p>
+        <span class="btn btn-primary">50€</span>
+        <i class="fa fa-shopping-basket fa-2x" title="¡Añadir a la cesta!" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" title="¡Favorito!" aria-hidden="true"></i>
+        <i class="fa fa-heart-o fa-2x" title="¡Me gusta!" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+</div><!-- Fin del container -->
+
+
+<!-- Pie de la pagina -->
+<div class="container-fluid pie">
+<footer class="row">
+
+  <div class="col-sm-4 col-md-4 col-lg-4 contacto">
+    <div>
+      <p>Contacto</p>
+      <p><b>palancas.gmail.com<br/>
+      921212/494949494</b></p>
+    </div>
+  </div>
+
+  <div class="col-sm-4 col-md-4 col-lg-4 informacion">
+    <div>
+      <p>Información</p>
+      <a href="#">¿Quienes Somos?</a><br/>
+      <a href="#">Condiciones de uso</a><br/>
+      <a href="#">Condiciones de venta</a>
+    </div>
+  </div>
+
+   <div class="col-sm-4 col-md-4 col-lg-4 redesSociales">
+    <div>
+      <p>Redes</p>
+      <a href="https://www.facebook.com/" class="zoom" title="Facebook"> <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+         <span class="sr-only">Facebook</span>
+      </a>
+      <a href="https://twitter.com/" class="zoom" title="Twitter"> <i class="fa fa-twitter-square fa-2x " aria-hidden="true"></i>
+      <span class="sr-only">Twitter</span></a>
+      <a href="https://www.instagram.com/" class="zoom" title="Instagram"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+      <span class="sr-only">Instagram</span></a>  
+    </div>
+  </div>
+
+
+</footer>
+</div>
+
+
+<!-- Script para que el texto se mueva -->
+<script  src="js/index1.js"></script>
+
+<!-- Boopstrap -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>
